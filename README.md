@@ -32,7 +32,10 @@ LexVault Mesh implements **Hardware-Matched Delegation** via the QVAC SDK:
 | **Reasoning** | Custom Desktop | Ryzen 9 | 64 GB | 24 GB (RTX 4090) |
 
 ---
-
+Node Role,Device Model,CPU,RAM,VRAM / GPU,Storage Type
+Capture (Mobile),iPhone 15 Pro,A17 Pro (6-core),8 GB,N/A (Integrated),256 GB NVMe
+Embedding (Laptop),MacBook Pro M3,Apple M3 (8-core),16 GB,16 GB (Unified),512 GB SSD
+Reasoning (Desktop),Custom Build,Ryzen 9 7950X,64 GB,24 GB (RTX 4090),2 TB Gen4 NVMe
 ## 🚀 Setup & Deployment
 ### 1. Prerequisites
 - **QVAC SDK**: Ensure the environment is configured with `@qvac/sdk`.
