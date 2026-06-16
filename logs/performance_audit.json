@@ -1,26 +1,33 @@
 {
   "project": "LexVault Mesh",
   "audit_date": "2026-06-16T14:30:00Z",
-  "validation_status": "complete",
-  "environment": {
-    "nodes": 3,
-    "framework": "QVAC SDK v1.0",
-    "cloud_dependency": false
-  },
-  "sessions": [
-    {
-      "session_id": "aud_8f992a",
-      "task": "Legal Evidence Synthesis",
-      "performance_metrics": {
-        "ttft_ms": 112,
-        "throughput_tokens_per_sec": 94,
-        "hardware_matched_delegation": true
+  "demo_run_id": "demo_lexvault_001",
+  "system_state": {
+    "model_lifecycle": [
+      {
+        "model_name": "QVAC-Reasoning-v1",
+        "action": "load",
+        "timestamp": "2026-06-16T14:28:00Z",
+        "status": "success"
       },
-      "agent_activity": {
-        "evidence_agent": "active",
-        "contradiction_agent": "active",
-        "briefing_agent": "active"
+      {
+        "model_name": "QVAC-Reasoning-v1",
+        "action": "unload",
+        "timestamp": "2026-06-16T15:00:00Z",
+        "status": "success"
       }
+    ]
+  },
+  "inference_performance": [
+    {
+      "task": "Contradiction_Detection",
+      "prompt_length_tokens": 450,
+      "generated_tokens": 120,
+      "metrics": {
+        "ttft_ms": 112,
+        "tokens_per_sec": 94
+      },
+      "hardware_node": "Desktop_RTX4090"
     }
   ]
 }
