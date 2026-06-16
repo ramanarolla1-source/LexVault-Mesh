@@ -20,11 +20,13 @@ Timeline Agent: Builds chronological event graphs from unstructured evidence.
 Contradiction Agent: Uses local reasoning to flag logical inconsistencies.
 
 Orchestration Agent: Handles P2P node discovery and hardware-matched workload delegation.
+
 📋 Hardware Reproducibility
-Node Role,Device Model,CPU,RAM,VRAM / GPU
-Edge Capture,iPhone 15 Pro,A17 Pro,8 GB,N/A
-Embedding,MacBook Pro M3,M3,16 GB,16 GB (Unified)
-Reasoning,Custom Build,Ryzen 9 7950X,64 GB,24 GB (RTX 4090)
+Edge Capture: iPhone 15 Pro | A17 Pro | 8 GB RAM
+
+Embedding: MacBook Pro M3 | M3 | 16 GB RAM | 16 GB VRAM
+
+Reasoning: Custom Desktop | Ryzen 9 7950X | 64 GB RAM | 24 GB VRAM (RTX 4090)
 🛠️ Quick Start Instructions
 Clone & Install: Clone the repository and install dependencies from requirements.txt.
 
