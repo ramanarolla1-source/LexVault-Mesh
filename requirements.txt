@@ -1,1 +1,16 @@
+# QVAC Mesh Infrastructure
+qvac-sdk>=1.0.0
 
+# Agentic Workflow Dependencies
+pandas>=2.0.0
+numpy>=1.24.0
+pydantic>=2.0.0
+
+# Local Reasoning & RAG
+langchain-community>=0.0.12
+chromadb>=0.4.0
+tokenizers>=0.13.0
+
+# Utility & Logging
+requests>=2.31.0
+tqdm>=4.65.0
