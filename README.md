@@ -1,4 +1,8 @@
 <img width="1024" height="559" alt="LexVault Mesh Distributed Intelligence Architecture" src="https://github.com/user-attachments/assets/aa7f0557-abfc-4068-a74e-7ae61da45e71" />
+Demo Video: https://youtu.be/ROpnOzo2Qx0
+One Pager: https://docs.google.com/document/d/1YHvCW_hy33WkuP_STpLhAPyzQ9XzxHmrGQRWNTRNUYI/edit?usp=sharing
+Presentation Deck: https://docs.google.com/presentation/d/1qJKbG8FVb2lJ3kpMmzYjtvXkWDtqhs13aBk2mU603xQ/edit?usp=sharing
+
 # LexVault Mesh
 **Distributed Offline Intelligence for Legal Discovery**
 
