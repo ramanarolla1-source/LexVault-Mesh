@@ -1,1 +1,12 @@
-
+{
+  "project_name": "LexVault Mesh",
+  "disclosure_date": "2026-06-16",
+  "remote_api_calls": "None",
+  "architecture_compliance": {
+    "local_inference": true,
+    "local_rag": true,
+    "p2p_delegation": true,
+    "data_egress_to_cloud": false
+  },
+  "notes": "All AI inference, embedding generation, and logical reasoning workloads are executed locally on the host devices via the QVAC SDK. There are no dependencies on external public API endpoints for system functionality."
+}
