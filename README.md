@@ -2,49 +2,38 @@
 Demo Video: https://youtu.be/ROpnOzo2Qx0
 One Pager: https://docs.google.com/document/d/1YHvCW_hy33WkuP_STpLhAPyzQ9XzxHmrGQRWNTRNUYI/edit?usp=sharing
 Presentation Deck: https://docs.google.com/presentation/d/1qJKbG8FVb2lJ3kpMmzYjtvXkWDtqhs13aBk2mU603xQ/edit?usp=sharing
+LexVault Mesh
+Distributed, Sovereign, and Private Legal Intelligence.
 
-# LexVault Mesh
-**Distributed Offline Intelligence for Legal Discovery**
+LexVault Mesh is a P2P multi-agent network that performs autonomous legal evidence synthesis entirely on-device, ensuring zero data egress to the cloud.
+🚀 Key Features
+Zero-Cloud Exposure: All RAG, embedding, and reasoning workloads run locally via QVAC SDK.
 
-LexVault Mesh is a high-performance, P2P-orchestrated legal intelligence suite. It empowers law firms and investigators to process sensitive case evidence (WhatsApp, PDFs, emails) entirely offline, utilizing a multi-agent mesh of consumer devices.
+Multi-Agent Orchestration: Specialized agents for Evidence Extraction, Timeline Synthesis, and Contradiction Detection.
 
----
+Audit-Ready: Built-in performance telemetry for transparent artifact verification.
+🛠 Architecture
+Evidence Agent: Performs secure local OCR and entity extraction.
 
-## 🛠 Architecture & Workflow
-![LexVault Mesh Distributed Intelligence Architecture.jpg](./docs/LexVault_Mesh_Distributed_Intelligence_Architecture.jpg)
+Timeline Agent: Builds chronological event graphs from unstructured evidence.
 
-LexVault Mesh implements **Hardware-Matched Delegation** via the QVAC SDK:
-*   **Edge Capture (Mobile)**: Optimized OCR and secure evidence ingestion.
-*   **Mesh Intelligence (P2P Layer)**: 
-    *   **Laptop Agent**: Manages vector embedding generation and RAG retrieval pipelines.
-    *   **Desktop Agent**: Executes heavy-duty deep reasoning and contradiction analysis.
-*   **Convergence**: Automated synthesis of Knowledge Graphs and Litigation Briefs.
+Contradiction Agent: Uses local reasoning to flag logical inconsistencies.
 
----
+Orchestration Agent: Handles P2P node discovery and hardware-matched workload delegation.
+📋 Hardware Reproducibility
+Node Role,Device Model,CPU,RAM,VRAM / GPU
+Edge Capture,iPhone 15 Pro,A17 Pro,8 GB,N/A
+Embedding,MacBook Pro M3,M3,16 GB,16 GB (Unified)
+Reasoning,Custom Build,Ryzen 9 7950X,64 GB,24 GB (RTX 4090)
+🛠️ Quick Start Instructions
+Clone & Install: Clone the repository and install dependencies from requirements.txt.
 
-## 📋 Hardware Specifications (Reproducibility Proof)
-*The following hardware was used for this demonstration. To reproduce these performance logs, ensure your devices meet or exceed these specifications.*
+Configure: Copy .env.example to .env and set your NODE_ROLE (e.g., laptop).
 
-| Node Role | Device | CPU | RAM | VRAM / GPU |
-| :--- | :--- | :--- | :--- | :--- |
-| **Capture** | iPhone 15 Pro | A17 Pro | 8 GB | N/A |
-| **Embedding** | MacBook Pro M3 | M3 | 16 GB | 16 GB Shared |
-| **Reasoning** | Custom Desktop | Ryzen 9 | 64 GB | 24 GB (RTX 4090) |
+Initialize: Run the mesh entry point via python src/main.py.
+⚖️ Compliance & Auditing
+API Disclosure: See api_disclosure.json for proof of zero remote dependencies and 100% local operation.
 
----
-Node Role,Device Model,CPU,RAM,VRAM / GPU,Storage Type
-Capture (Mobile),iPhone 15 Pro,A17 Pro (6-core),8 GB,N/A (Integrated),256 GB NVMe
-Embedding (Laptop),MacBook Pro M3,Apple M3 (8-core),16 GB,16 GB (Unified),512 GB SSD
-Reasoning (Desktop),Custom Build,Ryzen 9 7950X,64 GB,24 GB (RTX 4090),2 TB Gen4 NVMe
-## 🚀 Setup & Deployment
-### 1. Prerequisites
-- **QVAC SDK**: Ensure the environment is configured with `@qvac/sdk`.
-- **Network**: All devices must be connected to the same localized P2P mesh network.
+Performance Logs: See logs/performance_audit.json for benchmark data including TTFT, tokens/sec, and model lifecycles for your demo run.
 
-### 2. Installation
-```bash
-git clone [https://github.com/your-username/LexVault-Mesh.git](https://github.com/your-username/LexVault-Mesh.git)
-cd LexVault-Mesh
-pip install -r requirements.txt
-  
-  
+Prior Work: This project uses the QVAC SDK as its foundational communication layer; all agentic orchestration, logic, and audit-tooling are original contributions created for this hackathon.
